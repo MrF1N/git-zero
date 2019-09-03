@@ -1,0 +1,29 @@
+$ cd D:/Progs/7sem/MPL/0.lab/git-zero
+$ git init
+$ git add file.txt
+$ git commit -m 'Init commit'
+$ git remote add origin https://github.com/MrF1N/git-zero.git
+$ git push --set-upstream origin master
+$ git checkout -b newbranch
+$ git add .
+$ git commit -m 'First line added'
+$ git push --set-upstream origin newbranch
+
+$ cd D:/Progs/7sem/MPL/0.lab
+$ git clone https://github.com/MrF1N/git-zero.git git-zero-new
+$ cd D:/Progs/7sem/MPL/0.lab/git-zero/git-zero-new
+$ git checkout -b secondbranch
+$ git add .
+$ git commit -m 'First line added in secondbranch'
+$ git push --set-upstream origin secondbranch
+$ git checkout master
+$ git merge origin/newbranch
+$ git commit -m 'Changes merged from newbranch'
+$ git push
+$ git merge secondbranch
+$ git add .
+$ git commit -m 'Merged secondbranch'
+$ git push
+$ git add commands.txt
+$ git commit -m 'Commands added'
+$ git push
