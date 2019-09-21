@@ -140,7 +140,7 @@ header .small-hr {
     background-color: #f8f8f8;
 }
 
-.section__header {
+.section-header {
     width: 100%;
     max-width: 950px;
     margin: 0 auto 50px;
@@ -148,20 +148,20 @@ header .small-hr {
     text-align: center;
 }
 
-.section__suptitle {
+.section-suptitle {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333;
 }
 
-.section__title {
+.section-title {
     font-size: 30px;
     font-weight: 700;
     color: #333;
     text-transform: uppercase;
 }
 
-.section__title:after {
+.section-title:after {
     content: "";
     display: block;
     width: 60px;
@@ -171,38 +171,94 @@ header .small-hr {
     background-color: #f38181;
 }
 
-.section__text {
+.section-text {
     font-size: 15px;
     color: #999;
 }
 
-/* TEAM */
-.team {
+/* card_ */
+.card {
     display: flex;
     justify-content: space-between;
 }
 
-.team_member {
+.card-item {
     width: 382px;
+}
 
+.card-inner {
+    position: relative;
     background-color: #95e1d3;
 }
 
-.team_member:hover .team_img {
+.card-item:hover .card-img {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.team_member:hover .team_img img {
+.card-item:hover .card-img img {
     opacity: .1;
 }
 
-.team_img {
+.card-item:hover .card-text {
+    opacity: 1;
+}
+
+.card-img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
     transition: transform .2s linear;
 }
 
-.team_img img{
+.card-img img{
     display: block;
     transition: opacity .1s linear;
+}
+
+.card-text {
+    width: 100%;
+
+    font-size: 18px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social_item {
+    width: 55px;
+    height: 55px;
+    padding: 10px 10px;
+
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.social_item:last-child {
+    border-right: 0;
+}
+
+.social_item:hover {
+    color: #f8f8f8;
+    background-color: #f38181;
 }
