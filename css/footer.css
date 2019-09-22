@@ -130,12 +130,13 @@
 }
 
 .instagram-item {
-    width: 32.33333%;
-    border-bottom: 1px solid #fff;
+    width: 33.33333%;
+    border-bottom: 2px solid #fff;
 }
 
 .instagram-item img {
     display: block;
+
 }
 
 
@@ -197,4 +198,7 @@
 
 .subscribe-btn:focus {
     outline: 0;
+}
+.footer-social-header b {
+    font-weight: bold;
 }

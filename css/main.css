@@ -9,55 +9,42 @@ body {
     margin: 0 auto;
 }
 
-.small-hr {
-    width: 60px;
-    height: 4px;
-    border: none;
-    background-color: #f38181;
-}
-
 h1 {
-    font-size: 150pt;
+    font-size: 125pt;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 72pt;
+    font-size: 50pt;
 }
 
 h3 {
     font-size: 30pt;
+    color: #333;
 }
 
 h4 {
     font-size: 24pt;
+    color: #333;
 }
 
 /* SECTION */
 section {
-    padding: 80px 0;
-}
-
-.section-message {
-    background-color: #f8f8f8;
+    padding: 100px 0;
 }
 
 .section-header {
-    width: 100%;
-    max-width: 950px;
+    width: 68%;
     margin: 0 auto 50px;
-
     text-align: center;
 }
 
-.section-suptitle {
+.section-subtitle {
     font-family: 'Kaushan Script', cursive;
-    color: #333;
 }
 
 .section-title {
     font-weight: bold;
-    color: #333;
     text-transform: uppercase;
 }
 
@@ -67,11 +54,11 @@ section {
     width: 60px;
     height: 3px;
     margin: 30px auto;
-
     background-color: #f38181;
 }
 
 .section-text {
+    font-family: "Roboto Light", serif;
     font-size: 15px;
     color: #999;
 }
