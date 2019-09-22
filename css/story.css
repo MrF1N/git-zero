@@ -1,0 +1,12 @@
+.story-photos {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.story-photos li {
+    float: left;
+    display: block;
+    margin: 0 15px;
+}
