@@ -25,6 +25,8 @@
 .rectangle img {
     display: block;
     margin: auto;
+    width: 63px;
+    height: 61px;
 }
 
 .comment-message {
