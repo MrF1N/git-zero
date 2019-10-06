@@ -637,7 +637,7 @@ footer {
 .subscribe-input {
     width: 60%;
     height: 40px;
-    padding: 12px;
+    /*padding: 12px;*/
 
     background: #fff;
     border: 1px solid #e7e7e7;
@@ -662,7 +662,7 @@ footer {
 
 .subscribe-btn {
     width: 40%;
-    height: 40px;
+    height: 44px;
     padding: 12px 30px;
 
     background-color: #95e1d3;
