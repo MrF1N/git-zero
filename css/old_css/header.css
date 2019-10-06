@@ -1,5 +1,5 @@
 header {
-    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.80) 0%, rgba(243, 129, 129, 0.80) 100%), url(../img/header/eagle.png);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.80) 0%, rgba(243, 129, 129, 0.80) 100%), url(../../img/header/eagle.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

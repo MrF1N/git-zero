@@ -1,0 +1,105 @@
+@media (max-width: 600px) {
+    h1 {
+        font-size: 34pt;
+    }
+
+    h2 {
+        font-size: 26pt;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 20pt;
+        font-weight: bold;
+        float: left;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .story-photo {
+        width: 80%;
+    }
+
+    .story-photo-item img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .services {
+        grid-template-columns: 90%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .service {
+        margin: 0 auto 0 auto;
+    }
+
+    .service img {
+        height: 25px;
+        width: 25px;
+        margin: 0 10px;
+    }
+
+    .comment-image {
+        display: none;
+    }
+
+    .comment-message {
+        margin: auto 10px auto 10px;
+    }
+
+    .message {
+        font-size: 12pt;
+    }
+
+    .author-name {
+        font-size: 14pt;
+    }
+
+    .arrow {
+        margin: auto 10px auto 10px;
+    }
+
+    .author {
+        margin: 5px auto auto;
+    }
+
+    .container-message .small-hr {
+        width: 30px;
+        height: 2px;
+        margin: 5px 2px auto 0;
+    }
+
+    .card-item {
+        width: 80%;
+    }
+
+    .card-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-item {
+        width: 30px;
+        height: 30px;
+        font-size: 16pt;
+    }
+
+    .footer-col--first {
+        width: 100%;
+    }
+
+    .footer-col--second {
+        width: 100%;
+    }
+
+    .footer-col--third {
+        width: 100%;
+    }
+}

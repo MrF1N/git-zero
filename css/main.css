@@ -1,4 +1,4 @@
- body {
+body {
     padding: 0;
     margin: 0;
     font-family: Montserrat, sans-serif;
@@ -6,11 +6,11 @@
 
 .container {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 h1 {
-    font-size: 94pt;
+    font-size: 120pt;
     text-transform: uppercase;
     margin: 0 auto 0 auto;
 }
@@ -36,7 +36,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 1000px;
+    height: 100vh;
     color: white;
 }
 
@@ -54,16 +54,10 @@ header {
 
 .menu {
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
     display: block;
     float: right;
 }
-
- @media screen and (max-width: 1400px){
-     nav {
-         display: none;
-     }
- }
 
 .menu li {
     float: left;
@@ -77,6 +71,7 @@ header {
     text-transform: uppercase;
     font-size: 14pt;
 }
+
 header .section-title:after {
     content: "";
     display: block;
@@ -86,8 +81,18 @@ header .section-title:after {
     margin: 40px auto 0;
 }
 
+header .container {
+    height: 100%;
+    position: relative;
+}
+
 header .section-header {
-    margin: 110px auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%);
 }
 
 .button {
@@ -118,6 +123,7 @@ section {
 
 .section-subtitle {
     font-family: 'Kaushan Script', cursive;
+    padding: 20px;
 }
 
 .section-title {
@@ -217,7 +223,6 @@ section {
 
 .service {
     display: flex;
-
 }
 
 .service img {
@@ -271,7 +276,7 @@ section {
 }
 
 .comment-message {
-margin: auto 20px auto 30px;
+    margin: auto 20px auto 30px;
 }
 
 .message {
