@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  font-size: 120pt;
+  text-transform: uppercase;
+  margin: 0 auto 0 auto;
+}
+
+h2 {
+  font-size: 50pt;
+}
+
+h3 {
+  font-size: 30pt;
+  color: #333;
+}
+
+h4 {
+  font-size: 24pt;
+  color: #333;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 60pt;
+  }
+
+  h2 {
+    font-size: 40pt;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 34pt;
+  }
+
+  h2 {
+    font-size: 26pt;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

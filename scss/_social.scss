@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f38181;
+  line-height: 1;
+  transition: background .1s linear, color .1s linear;
+
+  i {
+    margin: auto;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &:hover {
+    color: #f8f8f8;
+    background-color: #f38181;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-item {
+    width: 30px;
+    height: 30px;
+    font-size: 16pt;
+  }
+}
