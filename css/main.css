@@ -10,8 +10,9 @@
 }
 
 h1 {
-    font-size: 125pt;
+    font-size: 94pt;
     text-transform: uppercase;
+    margin: 0 auto 0 auto;
 }
 
 h2 {
@@ -57,6 +58,12 @@ header {
     display: block;
     float: right;
 }
+
+ @media screen and (max-width: 1400px){
+     nav {
+         display: none;
+     }
+ }
 
 .menu li {
     float: left;
@@ -111,14 +118,10 @@ section {
 
 .section-subtitle {
     font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-    color: #333;
 }
 
 .section-title {
-    font-size: 30px;
     font-weight: 700;
-    color: #333;
     text-transform: uppercase;
 }
 
@@ -144,11 +147,12 @@ section {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .story-photos li {
     float: left;
     display: block;
-    margin: 0 15px; 
+    margin: 10px auto 15px auto;
 }
 
 .story-photo {
@@ -306,10 +310,12 @@ margin: auto 20px auto 30px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-item {
     width: 380px;
+    margin: 10px auto 10px auto;
 }
 
 .card-inner {
@@ -489,6 +495,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 65px;
+    flex-wrap: wrap;
 }
 
 .footer-col--first {
@@ -616,7 +623,7 @@ footer {
 
 .instagram-item img {
     display: block;
-
+    width: 95%;
 }
 
 
