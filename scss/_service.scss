@@ -16,14 +16,16 @@
 }
 
 .service-title {
-  font-size: 10pt;
+  font-size: 14pt;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "Montserat Regular", serif;
 }
 
 .service-text {
+  font-size: 15pt;
   margin: 20px auto auto;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
