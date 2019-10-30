@@ -305,7 +305,8 @@ textarea {
 
 .card-item {
   width: 380px;
-  margin: 10px auto 10px auto; }
+  margin: 10px auto 10px auto;
+  padding: 0 10px 0 10px; }
 
 .card-inner {
   position: relative;
@@ -404,7 +405,7 @@ textarea {
   margin: auto 20px auto 30px; }
 
 .message {
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
   font-style: italic;
   font-size: 22pt;
   color: #999999;
@@ -447,7 +448,7 @@ textarea {
     font-size: 12pt; }
 
   .author-name {
-    font-size: 14pt; }
+    font-size: 14px; }
 
   .arrow {
     margin: auto 10px auto 10px; }
@@ -491,7 +492,8 @@ footer {
 
 .footer-text {
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: 15pt;
+  font-family: "Roboto Light", sans-serif;
   color: #999; }
 
 .footer-social {
@@ -675,18 +677,31 @@ header {
 
 .menu {
   padding: 0;
-  margin: 10px 0 0 0;
-  display: block;
-  float: right; }
+  margin: 0 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .menu li {
-    float: left;
     display: block;
-    margin-right: 55px; }
+    margin: 10px 0 0 20px; }
     .menu li a {
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 14pt; }
+      font-size: 14px;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .menu li a:hover {
+        font-size: 16px;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        text-decoration: underline;
+        color: #fce38a; }
 
 header .section-title:after {
   content: "";
@@ -778,6 +793,28 @@ header .section-header {
   -webkit-transform: rotate(-45deg) translate3d(0px, 3px, 0);
           transform: rotate(-45deg) translate3d(0px, 3px, 0); }
 
+@media (max-height: 500px) {
+  header .section-title {
+    font-size: 40px; }
+    header .section-title:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: white;
+      margin: 10px auto 0; }
+  header .section-subtitle {
+    font-size: 25px; }
+  header .button {
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    text-align: center;
+    padding: 4px 0;
+    margin: 10px auto 30px;
+    width: 180px; } }
 @media (min-width: 601px) and (max-width: 1024px) {
   .logo {
     font-size: 20pt;
@@ -785,7 +822,7 @@ header .section-header {
     float: left; }
 
   .menu li {
-    margin-right: 20px; }
+    margin: 10px 0 0 20px; }
     .menu li a {
       font-size: 10pt; } }
 @media (max-width: 600px) {
@@ -809,36 +846,36 @@ body {
   margin: 0 auto 0 auto; }
 
 h1 {
-  font-size: 120pt;
+  font-size: 100px;
   text-transform: uppercase;
   margin: 0 auto 0 auto; }
 
 h2 {
-  font-size: 50pt; }
+  font-size: 50px; }
 
 h3 {
-  font-size: 30pt;
+  font-size: 30px;
   color: #333; }
 
 h4 {
-  font-size: 24pt;
+  font-size: 24px;
   color: #333; }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   h1 {
-    font-size: 60pt; }
+    font-size: 60px; }
 
   h2 {
-    font-size: 40pt; }
+    font-size: 40px; }
 
   .container {
     width: 85%; } }
 @media (max-width: 600px) {
   h1 {
-    font-size: 34pt; }
+    font-size: 34px; }
 
   h2 {
-    font-size: 26pt; }
+    font-size: 26px; }
 
   .container {
     width: 90%; } }
@@ -855,9 +892,13 @@ section {
   font-family: 'Kaushan Script', cursive;
   padding: 20px; }
 
+@media (max-height: 500px) {
+  .section-subtitle {
+    margin: 100px 0 5px 0; } }
 .section-title {
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1; }
   .section-title:after {
     content: "";
     display: block;
@@ -867,7 +908,7 @@ section {
     background-color: #f38181; }
 
 .section-text {
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
   font-size: 15px;
   color: #999; }
 
@@ -887,13 +928,16 @@ section {
     margin: 0 30px; }
 
 .service-title {
-  font-size: 10pt;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: Montserat, serif; }
 
 .service-text {
+  font-size: 15pt;
   margin: 20px auto auto;
-  font-family: "Roboto Light", serif; }
+  font-family: "Roboto Light", sans-serif;
+  color: #999; }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .services {
@@ -1021,17 +1065,25 @@ section {
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .works-col {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
-          flex: 1 1 0; }
+          flex: 1 1 0;
+  min-width: 150px;
+  max-width: 25%; }
 
 .works-text {
   font-size: 15px;
   font-style: italic;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "Roboto Regular", sans-serif; }
 
 .works-item {
   position: relative;
@@ -1044,12 +1096,13 @@ section {
 
 .works-image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear; }
 
 .works-info {
+  font-family: Montserat, sans-serif;
   width: 100%;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -1069,9 +1122,9 @@ section {
 .works-title {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-family: Montserat, sans-serif; }
 
 .section-work {
   padding-bottom: 0; }
-
 /*# sourceMappingURL=styles.css.map */

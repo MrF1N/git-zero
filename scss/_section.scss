@@ -14,6 +14,12 @@ section {
   padding: 20px;
 }
 
+@media (max-height: 500px) {
+  .section-subtitle {
+    margin: 100px 0 5px 0;
+  }
+}
+
 .section-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -30,7 +36,7 @@ section {
 }
 
 .section-text {
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
   font-size: 15px;
   color: #999;
 }

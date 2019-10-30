@@ -10,32 +10,32 @@ body {
 }
 
 h1 {
-  font-size: 120pt;
+  font-size: 100px;
   text-transform: uppercase;
   margin: 0 auto 0 auto;
 }
 
 h2 {
-  font-size: 50pt;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 30pt;
+  font-size: 30px;
   color: #333;
 }
 
 h4 {
-  font-size: 24pt;
+  font-size: 24px;
   color: #333;
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   h1 {
-    font-size: 60pt;
+    font-size: 60px;
   }
 
   h2 {
-    font-size: 40pt;
+    font-size: 40px;
   }
 
   .container {
@@ -45,11 +45,11 @@ h4 {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 34pt;
+    font-size: 34px;
   }
 
   h2 {
-    font-size: 26pt;
+    font-size: 26px;
   }
 
   .container {
