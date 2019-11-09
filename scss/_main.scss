@@ -4,6 +4,11 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.scroll-stop {
+  overflow: hidden;
+  height: 100%;
+}
+
 .container {
   width: 70%;
   margin: 0 auto 0 auto;
