@@ -30,19 +30,19 @@
       <nav>
         <ul class="menu">
           <li>
-            <a href="#">About</a>
+            <a href="#story">About</a>
           </li>
           <li>
-            <a href="#">Service</a>
+            <a href="#services">Service</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a href="#works">Work</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#footer">Blog</a>
           </li>
           <li>
-            <a href="#">Contract</a>
+            <a href="#footer">Contract</a>
           </li>
           <li>
             <a href="#">
@@ -64,20 +64,39 @@
     <div class="section-header">
       <h2 class="section-subtitle">Creative Template</h2>
       <h1 class="section-title">Welcome to MoGo</h1>
-      <a class="button" href="#">Learn More</a>
+      <a class="more-learn-button" href="#">Learn More</a>
     </div>
   </div>
 </header>
-<div class="mobile-menu">
+
+<section class="mobile-menu">
   <ul class="mobile-menu-list">
-    <li class="mobile-menu-item"><a href="#story" class="menu_link">Story</a></li>
-    <li class="mobile-menu-item"><a href="#services" class="menu_link">Services</a></li>
+    <li class="mobile-menu-item"><a href="#story" class="menu_link">About</a></li>
+    <li class="mobile-menu-item"><a href="#services" class="menu_link">Service</a></li>
     <li class="mobile-menu-item"><a href="#team" class="menu_link">Team</a></li>
-    <li class="mobile-menu-item"><a href="#works" class="menu_link">Works</a></li>
+    <li class="mobile-menu-item"><a href="#works" class="menu_link">Work</a></li>
     <li class="mobile-menu-item"><a href="#footer" class="menu_link">Info and blog</a></li>
   </ul>
+</section>
 
-</div>
+<section class="popup-more-learn">
+  <div class="popup-form">
+    <h2 class="popup-title">Learn More</h2>
+    <p>We will tell you more about us</p>
+    <form action="#" id="learn-popup">
+      <label for="name">
+        <input type="text" placeholder="Your name" id="name" class="name-input" required>
+      </label>
+      <label for="phone">
+        <input type="tel" placeholder="Mobile phone" id="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{7}" class="phone-input"
+               required>
+      </label>
+      <button type="submit" class="popup-button subscribe-popup-button">Subscribe</button>
+      <button type="button" class="popup-button close-popup-button">Close</button>
+    </form>
+  </div>
+  <div class="popup-more-learn-overlay"></div>
+</section>
 
 <section>
   <div class="container">
