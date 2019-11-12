@@ -46,3 +46,45 @@ popup_more_learn_overlay.addEventListener('click',
 );
 
 /*Popup ajax request*/
+const success_url = 'https://httpbin.org/status/200';
+const bad_url = 'https://httpbin.org/status/400';
+
+const learn_popup_form = document.forms['learn-popup'];
+
+function sendData(url, method) {
+    return fetch(url, {
+        method: method,
+        body: JSON.stringify(null),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(function (response) {
+        return response.status < 400
+            ? response.text()
+            : response.text().then(() => {throw new Error("")});
+    });
+}
+
+
+learn_popup_form.onsubmit = e => {
+    e.preventDefault();
+
+    const name = learn_popup_form.elements['learn-popup-name'].value;
+    const phone = learn_popup_form.elements['learn-popup-phone'].value;
+
+    let url;
+
+    if (name == "" || phone == "") {
+        url = bad_url;
+    } else {
+        url = success_url
+    }
+    sendData(url, "POST")
+        .then(function () {
+            alert("Thanks for your request, " + name + ".");
+            close_popup();
+        })
+        .catch(function () {
+            alert("Bad request, please check your params.");
+        });
+};
