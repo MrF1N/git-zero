@@ -22,6 +22,14 @@ menu_links.forEach(function (e) {
 const more_learn_button = document.querySelector('.more-learn-button');
 const more_learn_popup = document.querySelector('.popup-more-learn');
 const close_popup_button = document.querySelector('.close-popup-button');
+const popup_more_learn_overlay = document.querySelector('.popup-more-learn-overlay');
+const learn_form = document.getElementById('learn-popup');
+
+const close_popup = () => {
+    more_learn_popup.classList.remove("active-popup");
+    body.classList.remove("scroll-stop");
+    learn_form.reset();
+};
 
 more_learn_button.addEventListener('click', function (e) {
     e.preventDefault();
@@ -29,7 +37,12 @@ more_learn_button.addEventListener('click', function (e) {
     body.classList.toggle("scroll-stop");
 });
 
-close_popup_button.addEventListener('click', function () {
-    more_learn_popup.classList.remove("active-popup");
-    body.classList.remove("scroll-stop");
-});
+close_popup_button.addEventListener('click',
+    () => close_popup()
+);
+
+popup_more_learn_overlay.addEventListener('click',
+    () => close_popup()
+);
+
+/*Popup ajax request*/

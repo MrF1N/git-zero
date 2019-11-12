@@ -85,14 +85,15 @@
     <p>We will tell you more about us</p>
     <form action="#" id="learn-popup">
       <label for="name">
-        <input type="text" placeholder="Your name" id="name" class="name-input" required>
+        <input type="text" placeholder="Your name" id="name" class="name-input">
       </label>
       <label for="phone">
-        <input type="tel" placeholder="Mobile phone" id="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{7}" class="phone-input"
-               required>
+        <input type="tel" placeholder="Mobile phone" id="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{7}" class="phone-input">
       </label>
-      <button type="submit" class="popup-button subscribe-popup-button">Subscribe</button>
-      <button type="button" class="popup-button close-popup-button">Close</button>
+      <div class="popup-form-buttons">
+        <button type="submit" class="popup-button subscribe-popup-button">Subscribe</button>
+        <button type="button" class="popup-button close-popup-button">Close</button>
+      </div>
     </form>
   </div>
   <div class="popup-more-learn-overlay"></div>
